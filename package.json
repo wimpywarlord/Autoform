@@ -1,0 +1,32 @@
+{
+  "name": "autoform",
+  "version": "1.0.0",
+  "description": "Here to Revolutionaries the legal documentation ecosystem",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wimpywarlord/Autoform.git"
+  },
+  "keywords": [
+    "autoform",
+    "node",
+    "npm",
+    "kshitij",
+    "Dhyani",
+    "wimpywarlord"
+  ],
+  "author": "Kshitij Dhyani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wimpywarlord/Autoform/issues"
+  },
+  "homepage": "https://github.com/wimpywarlord/Autoform#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
