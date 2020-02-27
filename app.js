@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
+var global_variable_for_the_form_text;
 
 var app = express();
 app.use(bodyParser.urlencoded({extended : true}));
@@ -19,8 +20,18 @@ app.get("/test",function(req,res){
 app.post("/add_questions_to_the_form",function(req,res){
 
 	// console.log(req.body);
+	global_variable_for_the_form_text = req.body.yummy;
 	res.render("adding_questions.ejs",{
-		"form_text" : req.body.yummy,
+		"set_of_questions" : 0,
+		"form_text" : global_variable_for_the_form_text,
+		"signal_for_page" : 1,
+	});
+});
+
+app.post("/constuct_a_question",function(req,res){
+	res.render("adding_questions.ejs",{
+		"form_text" : global_variable_for_the_form_text,
+		"signal_for_page" : 0,
 	});
 });
 

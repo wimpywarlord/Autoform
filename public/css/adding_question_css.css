@@ -22,3 +22,9 @@ div
 	padding: 3%;
 	border-radius: 20px;
 }
+#the_box_for_questions
+{
+	padding: 5vh;
+	text-align: center;
+	color:#ECF0F1;
+}

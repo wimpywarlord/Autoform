@@ -11,18 +11,46 @@
     />
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/adding_question_css.css">
+
+	<!-- AJAX -->
+	<script>
+		
+	</script>
 </head>
 <body>
 	<div class = "row parent_div_for_the_page">
 		<div class="col-lg-4">
-			
+			<div id="the_box_for_questions">
+
+				<%if(signal_for_page === 1)
+				{%>
+				
+				<form action="/constuct_a_question" method="POST">
+
+					<button onclick="" id="button_for_adding_questions" type="submit" class="btn btn-outline-info">Add-Question</button>
+
+				</form>
+
+				<%}
+				else
+				{%>
+
+					<form action="" method="">
+						<label>Enter the question here</label>
+						<br>
+						<input type="text" class="form-control" name="question" placeholder="Question">
+						<br>
+						<input type="text" class="form-control" placeholder="Answer">
+					</form>
+
+				<%}%>
+			</div>
 		</div>
 		<div id="the_box_for_form" class="col-lg-8">
 			<div id="the_form_container">
 				<%-form_text%>
 			</div>
 		</div>
-
 	</div>
 </body>
 </html>
