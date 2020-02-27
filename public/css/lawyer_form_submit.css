@@ -12,10 +12,13 @@ body
 	text-align: center
 }
 
+
 form
 {
 	width: 100%;
 	margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 #enter_the_form_heading

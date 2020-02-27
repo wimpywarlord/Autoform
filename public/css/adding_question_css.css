@@ -1,0 +1,24 @@
+body
+{
+	background-color: #2C3E50;
+}
+div
+{
+	/*border: 2px solid red;*/
+}
+.parent_div_for_the_page
+{
+	height: 100%;
+}
+
+#the_box_for_form
+{
+	padding: 5vh;
+}
+
+#the_form_container
+{
+	background-color:  #ECF0F1;
+	padding: 3%;
+	border-radius: 20px;
+}

@@ -13,23 +13,30 @@
     <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/lawyer_form_submit.css">
 
+	<!-- EDITOR -->
+	<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 </head>
 <body>
 
 	<div class="row" id="box_for_taking_form">
 
-		<form>
+		<form action="/add_questions_to_the_form" method= "POST">
 				<h2 id="enter_the_form_heading">Enter the Form here.</h2>
 				
 				<br>
-				
-				<textarea placeholder="Enter your form here" rows="20" name="comment[text]" id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
-				
+					
+
+				<textarea placeholder="Enter your form here" rows="20" name="yummy" id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+
+				<script>
+                        CKEDITOR.replace( 'yummy' );
+                </script>
+
 				<br>
 				<br>
 
 
-				<button type="button" class="btn btn-outline-info">Submit</button>
+				<button type="submit" class="btn btn-outline-info">Submit</button>
 
 				<br>
 				<br>
