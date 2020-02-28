@@ -35,6 +35,15 @@ app.post("/constuct_a_question",function(req,res){
 	});
 });
 
+app.post("/saving_the_new_doc",function(req,res){
+	console.log(req.body.span_induced_doc);
+	global_variable_for_the_form_text = req.body.span_induced_doc;
+	res.render("adding_questions.ejs",{
+		"form_text" : global_variable_for_the_form_text,
+		"signal_for_page" : 0,
+	});
+});
+
 app.listen( process.env.PORT || 8000 , function(){
 	console.log("SERVER 8000 HAS STARTED");
 });

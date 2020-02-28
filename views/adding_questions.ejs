@@ -12,10 +12,13 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/adding_question_css.css">
 
-	<!-- AJAX -->
-	<script>
-		
-	</script>
+	<!-- JQUERY -->
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 	<div class = "row parent_div_for_the_page">
@@ -36,13 +39,13 @@
 				{%>
 
 					<form action="" method="">
+
 						<label>Enter the question here</label>
 						<br>
 						<input type="text" class="form-control" name="question" placeholder="Question">
 						<br>
-						<input type="text" class="form-control" placeholder="Answer">
-					</form>
 
+					</form>
 				<%}%>
 			</div>
 		</div>
@@ -50,7 +53,44 @@
 			<div id="the_form_container">
 				<%-form_text%>
 			</div>
+			<br>
+			<form id="id_for_post_of_new_doc" action="/saving_the_new_doc" method="POST">
+				<input id="the_input_field_of_new_doc" type="hidden" name="span_induced_doc" >
+				<button id="button_to_submit_id" onclick="submit_the_new_doc_value_func()"  class="btn btn-outline-info">Add-ID</button>
+			</form>
 		</div>
 	</div>
+
 </body>
+<!-- SELECTING SCRIPT -->
+	<script>
+		function getSelectedText() {
+		  t = (document.all) ? document.selection.createRange().text : document.getSelection();
+
+		  return t;
+		}
+
+		$('#the_box_for_form').mouseup(function() {
+		  var selection = getSelectedText();
+		  var selection_text = selection.toString();
+		  console.log(selection_text);
+		  // How do I add a span around the selected text?
+
+		  var span = document.createElement('SPAN');
+		  span.textContent = selection_text;
+
+		  var range = selection.getRangeAt(0);
+		  range.deleteContents();
+		  range.insertNode(span);
+		console.log($("#the_form_container").html());
+			$("#the_input_field_of_new_doc").attr("value", $("#the_form_container").html().replace(/&lt;/g, '<').replace(/&gt;/g, '>')); 
+		console.log($("#the_input_field_of_new_doc").attr("value"));
+		});
+
+		function submit_the_new_doc_value_func()
+		{
+			$("#id_for_post_of_new_doc").submit();
+			console.log("THE BUTTON FOR SUBMIT ID WAS CLICKED")
+		}
+	</script>
 </html>

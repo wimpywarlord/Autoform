@@ -14,6 +14,7 @@ div
 #the_box_for_form
 {
 	padding: 5vh;
+
 }
 
 #the_form_container
@@ -27,4 +28,11 @@ div
 	padding: 5vh;
 	text-align: center;
 	color:#ECF0F1;
+}
+span {color: red;}
+
+#button_to_submit_id
+{
+	display: block;
+	margin: 0 auto;
 }
