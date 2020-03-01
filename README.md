@@ -1,10 +1,10 @@
-# UNI INTERNSHIP TEST
+# AUTOFORM
 
 [![Stay Motivated](https://img.shields.io/badge/Stay-Motivated-teal.svg?style=for-the-badge)](https://github.com/wimpywarlord/Mess_It_Up) 
 [![Think Big](https://img.shields.io/badge/Think-Big-orange.svg?style=for-the-badge)](https://www.linkedin.com/in/kshitijdhyani/)
 [![Work Hard](https://img.shields.io/badge/Work-Hard-blue.svg?style=for-the-badge)](https://github.com/wimpywarlord)
 
-Here to build a small project as a test for UNI internship. For starters it will be a movie suggesting/featuring website , lets see where it goes after that.
+
 
 Link to the website : https://deceptiform.herokuapp.com/lawyer_form_intake
 
