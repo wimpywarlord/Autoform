@@ -11,6 +11,17 @@
     />
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/adding_question_css.css">
+	<style type="text/css">
+		div
+		{
+			border: 2px solid red;
+		}
+		iframe
+		{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 
 	<!-- JQUERY -->
 		<script
@@ -25,28 +36,8 @@
 		<div class="col-lg-4">
 			<div id="the_box_for_questions">
 
-				<%if(signal_for_page === 1)
-				{%>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP1cnDcwFxnh_sfOXwCXmEkUPN0mpVcLp6OH2fpUBgo1S73Q/viewform?embedded=true" width="640" height="543" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				
-				<form action="/constuct_a_question" method="POST">
-
-					<button onclick="" id="button_for_adding_questions" type="submit" class="btn btn-outline-info">Add-Question</button>
-
-				</form>
-
-				<%}
-				else
-				{%>
-
-					<form action="" method="">
-
-						<label>Enter the question here</label>
-						<br>
-						<input type="text" class="form-control" name="question" placeholder="Question">
-						<br>
-
-					</form>
-				<%}%>
 			</div>
 		</div>
 		<div id="the_box_for_form" class="col-lg-8">
@@ -56,7 +47,6 @@
 			<br>
 			<form id="id_for_post_of_new_doc" action="/saving_the_new_doc" method="POST">
 				<input id="the_input_field_of_new_doc" type="hidden" name="span_induced_doc" >
-				<button id="button_to_submit_id" onclick="submit_the_new_doc_value_func()"  class="btn btn-outline-info">Add-ID</button>
 			</form>
 		</div>
 	</div>

@@ -25,9 +25,10 @@ div
 }
 #the_box_for_questions
 {
-	padding: 5vh;
+	padding: 1vh;
 	text-align: center;
 	color:#ECF0F1;
+	height: 100%;
 }
 span {color: red;}
 

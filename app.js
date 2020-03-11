@@ -13,7 +13,7 @@ app.get("/lawyer_form_intake",function(req,res){
 	res.render("lawyer_form_intake.ejs");
 });
 ;
-app.get("/test",function(req,res){
+	app.get("/test",function(req,res){
 	res.render("test.ejs");
 });
 
