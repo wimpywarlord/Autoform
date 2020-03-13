@@ -6,7 +6,7 @@
 
 
 
-Link to the website : https://deceptiform.herokuapp.com/lawyer_form_intake
+Basically a prototype for deceptiform : https://github.com/wimpywarlord/women_techies
 
 ## Getting Started
 
